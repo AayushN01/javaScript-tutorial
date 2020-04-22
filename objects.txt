@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+ <script>
+  var car = {type: "fiat",
+             model: "500",
+             color:"white"};
+  var person = {firstName: "John",
+               lastName: "Doe",
+               age: 25,
+               changeName: function(newFirstName){
+               this.firstName = newFirstName;
+               }
+                };
+   console.log(person.firstName);
+   person.changeName('Abhay');
+   console.log(person.firstName);
+  </script>
+</body>
+</html>
