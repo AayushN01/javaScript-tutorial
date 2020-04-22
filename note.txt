@@ -32,8 +32,8 @@ __________________________________________________________OPERARATORS:
 1) Arithmetic: + - * / %(gives remainder) ++ --
 2) Assignment: = += -= *= /= %=
 3) Comparision: == << >> != <= >= 
-4) Logical: || ! 
+4) Logical: || !  
 5) Type operators: typeof, instanceOf(compare the type of objects)
-6) Bitwise: AND, OR, XOR, NOT
+6) Bitwise: AND, OR, XOR, NOT.
 __________________________________________________________
  
