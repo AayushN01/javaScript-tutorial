@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+ 
+</head>
+<body>
+ <h1></h1>
+  <script>
+    console.log('Hello world');
+    //Program
+    var x= 5;
+    var y = 10;
+    var z = x + y;
+    console.log('Value of z = ' +z);
+    //semi-colons
+    var a = 1;
+    var b = 2;
+    var c = a + b;
+    console.log(c);
+    //semi-colons2
+    a = 5; b = 6; c = a + b; console.log(c)
+    //white Space
+    var c=a+b;
+    console.log(c)
+    //use spaces 
+//functions
+    function addTwoNumbers(){
+      var x = 10;
+      var y = 20;
+      var z = x + y;
+      console.log(z);
+     }
+      addTwoNumbers(); 
+  </script>
+
+</body>
+</html>

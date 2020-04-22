@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+ <script>
+   var x = 5; 
+   var y = 15;
+   var z = x + y;
+   console.log('Sum is = '+z);
+   
+  ///
+   var pi =3.14;
+   var x = 100;
+   var name = "AAyush";
+   console.log(pi, x, name);
+   
+   //
+   var data1 = "1" + 2 + 3;
+   console.log(data1); //data is printed as a string
+   
+   var data2 = 2 + 3 + "1";
+   console.log(data2); // the sum of 2 and 3 is printed along withs the string 1
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+Seeing Output:
+1) window.alert()==Printing alert to screen
+2) document.write()=> We directly updated data
+3) innerHTML=> updating text, button clicks
+4) console.log()=> mostly used 
+___________________________________________________
+SYNTAX:
+*Use semicolons(;)
+*String are written as "string_name" OR 'string_name'
+*Declaring variables:- use 'var' keyword to declare variables
+*operators: assignment (=)
+	    arithmetic (+ - * /)
+*comments: use //( for single line comment) OR (/* and */) for multiline comment	    
+____________________________________________________
+STATEMENTS & keywords
+* console.log('')
+* break - terminate switch or loop
+* continue - jump out of loop and start at the top
+* debugger - stops execution of JavaScript, and calls(if available) the debugging function
+* do...while - executes a block of statement, and repeats the block, while a conditon is true
+* function - declare function
+* if...else
+* return - exits a function
+*switch
+*try...catch - implement error handling to block of statements
+* var - declare variables
+__________________________________________________________
+DATA TYPES:
+1) Numbers
+2) String
+__________________________________________________________OPERARATORS:
+1) Arithmetic: + - * / %(gives remainder) ++ --
+2) Assignment: = += -= *= /= %=
+3) Comparision: == << >> != <= >= 
+4) Logical: || ! 
+5) Type operators: typeof, instanceOf(compare the type of objects)
+6) Bitwise: AND, OR, XOR, NOT
+ 
