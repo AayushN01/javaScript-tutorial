@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>EVENTS</title>]
+</head>
+<body>
+  <p> Events are something that users or browser want to do something</p>
+ <button onclick="this.innerHTML='Have a nice day!'">Click ME</button>
+  <button onmouseover="this.innerHTML='Have a nice day!'">Click ME</button>
+ <!-- onclick, onchange, onmouseover, onmouseout, onkeydown, onload-->
+  </body>
+</html>
