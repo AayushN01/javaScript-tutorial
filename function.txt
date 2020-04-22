@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+ <script>
+var x = (2 * 3  + 5);
+var y = 3 * 4;
+   
+   
+   function myFunction(num1, num2){
+       var a = num1 * num2;
+       var b = num1 + num2;
+       return a + b;
+   }
+   var result = myFunction(2,3);
+   console.log(result);
+  </script>
+</body>
+</html>
