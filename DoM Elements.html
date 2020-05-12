@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>DOM Elements</title>
+</head>
+<body>
+  <p id = "sample"></p>
+  <form id="form1" action = "">
+    First Name:<input type="text" name="fname" value="Donald"><br>
+    Last Name:<input type="text" name="lname" value="Duck"><br>
+    <input type = 'submit' value="submit">
+  </form>
+  <br>
+  <button onclick="myfunction()">Try me!</button>
+  <hr> 
+  <p id ="formContent"></p>
+   
+  <script>
+    
+    
+    //id
+    var sample = document.getElementById('sample');
+    console.log(sample); 
+    
+    //tag name
+    var sample2 = document.getElementById('sample2');
+    console.log(sample2);
+    
+     //class name
+    var sample3 = document.getElementById('sample3');
+    console.log(sample3);
+    
+    //CSS selectors
+    var x = document.querySelectorAll('p.sample');
+    console.log(x);
+    
+    //HTML object collection
+    function myfunction(){
+      var x = document.forms["form1"];
+      var text = "";
+      var i;
+      for(i = 0; i<x.length; i++){
+        text += x.elements[i].value _ "<br>";
+        
+      }
+      document.getElementById('formContent').innerHTML = text;
+    }
+    
+    
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>DOM Events</title>
+</head>
+<body onload="checkCookies()">
+  <h1 onclick="changeText(this)">
+    HELLO
+  </h1>
+  <button id="buttonClick">click ME</button>
+  <p id = "cookiePara">AJSOIHDOI</p>
+  <script>
+
+    function changeText(elem){
+      elem.innerHTML = 'OOuchh!';
+    }
+    document.getElementById('buttonClick').onclick = changeButtonText;
+    function changeButtonText(){
+      document.getElementById('buttonClick').innerHTML = "I was clicked";
+    }
+    
+    //onload and onunload
+    function checkCookies(){
+      var text ="";
+      if(navigator.cookieEnabled){
+        text = "Cookies are enabled";
+      }else{
+        text = "Cookies are nor enabled";
+      }
+      document.getElementById('cookiePara').innerHTML = text;
+    }
+  </script>
+
+</body>
+</html>

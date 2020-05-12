@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>DOM Events handlers</title>
+</head>
+<body>
+  <button id="clickMe">Click Me!</button>
+  <p id="windowTest"></p>
+  <script>
+//addEventListener()
+    //Attaches event handler to specified events
+ //elemnt.addEventListener(event, function, useCapture)   
+    
+//removeEventListener()
+ 
+    var elem = document.getElementById('clickMe');
+    elem.addEventListener('click', callMyFunction);
+    function callMyFunction(){
+      alert('Hello WOrld!');
+    }
+    var count = 0;
+    window.addEventListener("resize", callResize(count));
+      function callResize(){
+        document.getElementById('windowTest').innerHTML = Math.random();
+      }
+    
+    
+  </script>
+
+</body>
+</html>
