@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Errors</title>
+</head>
+<body>
+  <p id="errorDisplay"></p>
+ <input id="example" type="text">
+  <button type="button" onclick="myFunction()">Test Input</button>
+  <p id="message">Message will be displayed here</p>
+          <script>
+  <p id="finally">dafiuadgsiu</p>
+  /*try{
+    some code 
+  }
+  catch(err){
+  code to handle error
+  }*/
+
+           function myFunction(){
+             var message, x;
+             message = document.getElementById("message");
+             message.innerHTML = "";
+             x = document.getElementById("example").value;
+             try{
+               if(x == "") throw "empty";
+               if(isNaN(x)) throw "not a number";
+               x = Number(x);
+               if(x<5) throw "Too low";
+               if(x>10) throw "Too high"
+             }catch(err){
+               message.innerHTML = "Input is" +err;
+             } finally{
+               documrnt.getElementById('finally').innerHTML = "Finally Execuiton";
+             }
+           }
+            
+            
+  try{
+    alert('Welcome Student');
+  }
+  catch(err){
+    //err.message and err.name
+    document.getElementById('errorDisplay').innerHTML= err.message;
+  }
+  
+  
+  </script>
+  
+  
+</body>
+</html>

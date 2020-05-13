@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Errors2</title>
+</head>
+<body>
+  <p id="rangeError"></p>
+    <p id="referenceError"></p>
+    <p id="syntaxError"></p>
+  <p id="typeError"></p>
+  <p id="URIError"></p>
+  <script>
+    //EvalError = eval()
+        
+    //RangeError = A Number is out of range
+    var num = 1;
+    try{
+      num.toPrecision(500);
+    }catch(err){
+      document.getElementById("rangeError").innerHTML = err.name;
+    }
+        
+    //ReferenceError = illegal reference
+    var x;
+    try{
+      x = y + 1;
+      
+    }catch(err){
+      document.getElementById('referenceError').innerHTML = err.name;
+    }
+    
+    //Syntax Error = Syntax incorrect
+     
+    try{
+    eval("alert('Hello')");
+      
+    }catch(err){
+      document.getElementById('syntaxError').innerHTML = err.name;
+    }
+    
+    
+    //TypeError = type error
+    num = 1;
+      try{
+    num.toUpperCase();
+      
+    }catch(err){
+      document.getElementById('typeError').innerHTML = err.name;
+    }
+    
+    //URIError = encodeURI
+    try{
+    decodeURI('%%%');
+      
+    }catch(err){
+      document.getElementById('URIError').innerHTML = err.name;
+    }
+ 
+  </script>
+  
+  
+</body>
+</html>
