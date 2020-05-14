@@ -1,0 +1,16 @@
+Common Mistakes;
+ 1) Acidentally using assignment operator(=)
+ => use == for comparison
+ 2)Expecting loose Comparison
+ => == v/s ===
+ 3)Switch: case sensative
+ 4) addition and concatenation confusion
+ => addition is for adding
+ => concatination is adding strings together
+ var x = 10 + 5; //addition=15
+ var x = 10 + "5"; //concatination==105 
+ 5)Semicolon ;
+ 6) Ending arrray with a Comma
+ 7) Ending object definition with a Comma
+ 8) Undefined is not NULL
+ 

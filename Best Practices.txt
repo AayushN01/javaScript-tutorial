@@ -1,0 +1,17 @@
+Best Practices
+
+1) Avoid using global variables
+2) declare local variable
+3) Declare variables at the top
+4) Initializing variables
+5) use {} to initialize objects - new Object()
+ 	"" for string- new String()
+	0 number -	new Number()
+	false boolean- new Boolean
+	[] array - new Array
+	/()/ - new RegExp()
+	function () {} - new function()
+6) Beaware of automatic type conversion
+7) === v/s ==
+8) end switch statement with default
+9) do not use eval function
