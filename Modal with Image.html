@@ -1,0 +1,132 @@
+
+    
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Modal</title>
+  <style>
+    /*Style the image used to trigger th Modal*/
+    #myImg{
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    #myImg: hover{opacity: 0.7;}
+    
+    /*Modal background*/
+    .modal{
+      display: none; /*Hidden by default*/
+      position: fixed; /*stay in place */
+      z-index: 1; /*Sit on top */
+      padding-top: 100px; /*Location of box*/
+      left: 0;
+      top: 0;
+      width: 100%; /*full width*/
+      height: 100%; /*full height*/
+      overflow: auto; /*Enable scroll if needed*/
+      background-color: rgb(0,0,0);/*Fallback color*/
+      background-color: rgba(0,0,0,0.4);/*Black w/ opacity*/
+    }
+    /*Modal Content*/
+    .modal-content{
+     margin: auto;
+     display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+        
+	  /*Caption of modal Image*/
+    #caption{
+      margin: auto;
+      display: block;
+      width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+    }
+    
+     /*Add animation- Zoom in the mOdal*/
+    .modal-content, #caption{
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+     @-webkit-keyframes zoom{
+      from {-webkit-transform:scale(0)}
+      to{-webkit-transform:scale(1)}
+    }
+    
+     @keyframes zoom{
+      from {transform:scale(0)}
+       to {transform: scale(1)}    
+
+    /*Close Button*/
+    .close{
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+       
+    .close: hover,
+    .close: focus{
+        color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+       } 
+       
+     /*100% Image width on smaller Screens*/
+       @media onlyscreen and (max-width: 700px){
+         .modal-content{
+           width: 100%;
+         }
+       }
+       
+    
+  </style>
+</head>
+<body>
+  <h1>-----------MODAL---------</h1>
+  <h2>Animated Modal with Image</h2>
+  
+  <!--Trigger/Open Modal-->
+  <img id="myImg" src="http://i.imgur.com/wwxiFqF.jpg" alt="Someone is watching!" width="300" height="200">
+  
+  <!--The Modal-->
+  <div id="myModal" class="modal">
+    <!--Close Button-->
+    <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+    
+    <!--Modal Content (Image)-->
+    <img class="modal-content" id="img01"> 
+     <!--Modal Content (Image Text) --> 
+      <div id="caption"</div>
+          
+  </div>
+  <script>
+
+    var modal = document.getElementById('myModal');
+    var img = document.getElementById('myImg');
+    var img01 = document.getElementById('img01');
+     var caption = document.getElementById('caption');
+    var close = document.getElementsByClassName('close')[0];
+    
+    img.onclick = function(){
+      modal.style.display = "block";
+      img01.src = this.src;
+      caption.innerHTML = this.alt;
+      
+    }
+    close.onclick = function(){
+      modal.style.display ="none";
+    }
+  </script>
+</body>
+</html>
